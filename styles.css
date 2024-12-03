@@ -1,0 +1,103 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set body to take full height and width */
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lora', serif; /* Body text uses Lora */
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    
+    /* Gradient Background */
+    background: linear-gradient(45deg, #00aaff, #0044ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  /* Define the keyframes for gradient animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Container to center content */
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-family: 'Playfair Display', serif; /* Headings use Playfair Display */
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+  
+  h2 {
+    font-family: 'Playfair Display', serif; /* Headings use Playfair Display */
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 1.5em;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5em;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+    
+    p {
+      font-size: 1em;
+    }
+  
+    .social-icons a img {
+      width: 30px;
+      height: 30px;
+    }
+  }
